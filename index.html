@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>JANKEN CARDS - 卡牌決鬥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <div class="start-content">
+            <img src="logo.png" alt="遊戲 Logo" class="game-logo-img">
+            <h1 class="game-title">卡牌決鬥<br><span class="sub-title">JANKEN CARDS</span></h1>
+            <button id="start-button">開始遊戲</button>
+        </div>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div id="game-area">
+            <div class="player">我方 HP: <span id="p-hp">50</span></div>
+            <div class="player">敵方 HP: <span id="e-hp">50</span></div>
+        </div>
+        <div id="battle-field">
+            <div id="p-card-slot" class="card-slot"></div>
+            <div id="vs-text">VS</div>
+            <div id="e-card-slot" class="card-slot"></div>
+        </div>
+        <div id="log">請點擊下方卡牌開始決鬥</div>
+        <div id="hand-area"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
